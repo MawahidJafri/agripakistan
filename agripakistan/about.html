@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>AgriPakistan</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link href="assets/img/logo.jpeg" rel="icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Marcellus:wght@400&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <style>
+    /* About Page CSS */
+/* Page Title */
+.page-title {
+  background-size: cover;
+  background-position: center;
+}
+
+.page-title-content {
+  text-align: center;
+}
+
+.page-title-heading {
+  font-size: 36px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.page-title-subheading {
+  font-size: 16px;
+  color: #fff;
+}
+
+/* Introduction Section */
+.about-intro {
+  padding: 60px 0;
+}
+
+.about-intro-container {
+  width: 100%;
+}
+
+.about-intro-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.about-intro-text {
+  width: 50%;
+  margin-left: 30px;
+}
+
+.intro-heading {
+  font-size: 32px;
+  font-weight: bold;
+  color: #333;
+}
+
+.intro-paragraph {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #666;
+}
+
+.about-intro-image {
+  width: 50%;
+}
+
+.img-fluid {
+  width: 50%;
+  border-radius: 8px;
+}
+
+/* Our Journey Section */
+.journey {
+  padding: 60px 0;
+  background-color: #000;
+}
+
+.journey-container {
+  width: 100%;
+}
+
+.journey-title {
+  text-align: center;
+}
+
+.journey-heading {
+  font-size: 32px;
+  font-weight: bold;
+  color: white;
+}
+
+.journey-description {
+  font-size: 16px;
+  color: white;
+}
+
+.journey-timeline {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 40px;
+}
+
+.timeline-item {
+  width: 30%;
+}
+
+.timeline-year {
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+}
+
+.timeline-description {
+  font-size: 16px;
+  color: white;
+}
+
+/* Core Values Section */
+.core-values {
+  background-color: #f8f8f8;
+  padding: 60px 0;
+}
+
+.core-values-container {
+  width: 100%;
+}
+
+.core-values-title {
+  text-align: center;
+}
+
+.core-values-heading {
+  font-size: 32px;
+  font-weight: bold;
+  color: #333;
+}
+
+.core-values-description {
+  font-size: 16px;
+  color: #777;
+}
+
+.core-values-row {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 40px;
+}
+
+.core-value {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.core-value-heading {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+}
+
+.core-value-description {
+  font-size: 16px;
+  color: #555;
+}
+
+/* Call to Action Section */
+.cta {
+  color: #fff;
+  padding: 60px 0;
+}
+
+.cta-container {
+  text-align: center;
+}
+
+.cta-heading {
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.cta-description {
+  font-size: 16px;
+  color: #bbb;
+}
+
+.cta-button {
+  padding: 12px 30px;
+  font-size: 18px;
+  background-color: green;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: green;
+}
+    .page-title {
+    background-image: url('assets/img/istockphoto-1363571533-612x612.jpg');
+    background-size: cover; /* Ensures the image covers the whole div */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    position: relative; /* Allows child elements to be positioned over the image */
+    font-size: 42px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.page-title:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2); /* Optional: Adds a dark overlay, you can adjust opacity */
+    z-index: 1; /* Ensures the overlay is behind text */
+}
+
+  </style>
+</head>
+
+<body class="about-page">
+
+  <header id="header" class="header d-flex align-items-center">
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+        <a href="index.php" class="logo d-flex align-items-center">
+            <img src="assets/img/logo.jpeg" alt="AgriCulture">
+        </a>
+        <nav id="navmenu" class="navmenu">
+            <ul>
+              <li><a href="index.php" class="">Home</a></li>
+              <li><a href="about.html" class="active">About Us</a></li>
+              <li><a href="services.html" class="">Our Services</a></li>
+              
+              <li class="dropdown">
+                  <a href="#"><span>Resources for Farmers</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                  <ul>
+                      <!-- Marketplace (Visible to All) -->
+                      <li class="dropdown">
+                          <a href="#"><span>Marketplace</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                          <ul>
+                              <li><a href="products.php">Browse Products</a></li>
+                              <li><a href="bulk_orders.html">Bulk Orders</a></li>
+                          </ul>
+                      </li>
+              
+                      <!-- Farmer's Corner (Visible to Sellers Only) -->
+                      <li class="dropdown">
+                          <a href="#"><span>Farmer's Corner</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                          <ul>
+                              <li><a href="add_products.php">Add Your Product</a></li>
+                              <li><a href="manage_listings.php">Manage Listings</a></li>
+                          </ul>
+                      </li>
+              
+                      <!-- Support (Visible to All) -->
+                      <li class="dropdown">
+                          <a href="#"><span>Support</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                          <ul>
+                              <li><a href="help_center.html">Help Center</a></li>
+                          </ul>
+                      </li>
+                  </ul>
+              </li>
+              
+              <li><a href="contact.html">Contact</a></li>
+  
+        </nav>
+    </div>
+</header>
+
+  <main class="main">
+
+    <!-- Page Title -->
+    <div class="page-title" style="background-image: url('assets/img/page-title-bg.webp');">
+      <div class="container position-relative">
+        <h1 style="color: #ffffff; font-family: var(--heading-font);">About Us</h1>
+        <p class="page-title-subheading">Empowering farmers, connecting buyers, and ensuring fresh produce for everyone.</p>
+        <nav class="breadcrumbs">
+          <ol>
+            <li style="color: #00ff5e;"><a href="index.php">Home</a></li>
+            <li style="color: #ffffff;" class="current">Services</li>
+          </ol>
+        </nav>
+      </div>
+    </div>
+
+    <!-- Introduction Section -->
+  <section class="about-intro">
+    <div class="about-intro-container">
+      <div class="about-intro-row">
+        <div class="about-intro-text">
+          <h2 class="intro-heading">Welcome to AgriPakistan</h2>
+          <p class="intro-paragraph">At AgriPakistan, our mission is to bridge the gap between hardworking farmers and global markets. By empowering local farmers, we ensure fresh, organic produce reaches customers worldwide.</p>
+          <p class="intro-paragraph">Our platform eliminates middlemen, providing fair pricing and fostering sustainability in agriculture.</p>
+        </div>
+        <div class="about-intro-image">
+          <img src="assets/img/pak-farmer.jpg" alt="Welcome Image" class="img-fluid rounded">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Our Journey Section -->
+  <section class="journey">
+    <div class="journey-container">
+      <div class="journey-title">
+        <h2 class="journey-heading">Our Journey</h2>
+        <p class="journey-description">From a simple idea to a thriving platform for farmers and buyers.</p>
+      </div>
+      <div class="journey-timeline">
+        <div class="timeline-item">
+          <h3 class="timeline-year">2023</h3>
+          <p class="timeline-description">Conceptualized the idea of a direct-to-consumer agricultural marketplace.</p>
+        </div>
+        <div class="timeline-item">
+          <h3 class="timeline-year">2024</h3>
+          <p class="timeline-description">Launched our platform, connecting hundreds of farmers with buyers worldwide.</p>
+        </div>
+        <div class="timeline-item">
+          <h3 class="timeline-year">Future</h3>
+          <p class="timeline-description">Expanding services and fostering innovation in sustainable agriculture.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Core Values Section -->
+  <section class="core-values">
+    <div class="core-values-container">
+      <div class="core-values-title">
+        <h2 class="core-values-heading">Our Core Values</h2>
+        <p class="core-values-description">Guiding principles that drive everything we do.</p>
+      </div>
+      <div class="core-values-row">
+        <div class="core-value">
+          <h3 class="core-value-heading">Sustainability</h3>
+          <p class="core-value-description">Promoting environmentally friendly farming practices.</p>
+        </div>
+        <div class="core-value">
+          <h3 class="core-value-heading">Transparency</h3>
+          <p class="core-value-description">Ensuring honest transactions for both farmers and buyers.</p>
+        </div>
+        <div class="core-value">
+          <h3 class="core-value-heading">Empowerment</h3>
+          <p class="core-value-description">Supporting farmers with tools and resources for success.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Call to Action Section -->
+  <section class="cta">
+    <div class="cta-container">
+      <h2 class="cta-heading">Join Us in Revolutionizing Agriculture</h2>
+      <p class="cta-description">Be part of the movement to bring fresh, organic produce to every table.</p>
+      <a href="contact.html" class="cta-button">Get in Touch</a>
+    </div>
+  </section>
+
+  </main>
+
+  <footer id="footer" class="footer dark-background">
+
+    <div class="footer-top">
+      <div class="container">
+        <div class="row gy-4">
+          <div class="col-lg-4 col-md-6 footer-about">
+            <a href="index.html" class="logo d-flex align-items-center">
+              <span class="sitename">AgriPakistan</span>
+            </a>
+            <div class="footer-contact pt-3">
+              <p>Shahab Pura Road</p>
+              <p>Sialkot, Pakistan</p>
+              <p class="mt-3"><strong>Phone:</strong> <span>+92 334 716 3786</span></p>
+              <p><strong>Email:</strong> <span>info@example.com</span></p>
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-md-3 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About us</a></li>
+              <li><a href="#">Services</a></li>
+              <li><a href="#">Contact us</a></li>
+              <li><a href="#">Privacy policy</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-2 col-md-3 footer-links">
+            <h4>Our Services</h4>
+            <ul>
+              <li><a href="#">Product Listing</a></li>
+              <li><a href="#">Secure Payment</a></li>
+              <li><a href="#">Shipment &amp; Delivery</a></li>
+              <li><a href="#">Profile Management</a></li>
+              <li><a href="#">Customer Support</a></li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="copyright text-center">
+      <div class="container d-flex flex-column flex-lg-row justify-content-center justify-content-lg-between align-items-center">
+
+        <div class="d-flex flex-column align-items-center align-items-lg-start">
+          <div>
+            © Copyright <strong><span>This is the final year project for University of Sialkot. </span></strong> All Rights Reserved.
+          </div>
+        </div>
+
+        <div class="social-links order-first order-lg-last mb-3 mb-lg-0">
+          <a href=""><i class="bi bi-twitter-x"></i></a>
+          <a href=""><i class="bi bi-facebook"></i></a>
+          <a href=""><i class="bi bi-instagram"></i></a>
+          <a href=""><i class="bi bi-linkedin"></i></a>
+        </div>
+
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

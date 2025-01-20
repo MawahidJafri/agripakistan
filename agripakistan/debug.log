@@ -1,0 +1,16 @@
+Array
+(
+    [product_id] => 32
+    [quantity] => 2
+    [category_id] => 8
+    [shipping_address] => Sialkot, Punjab
+    [contact_number] => 03338604522
+)
+Array
+(
+    [product_id] => 32
+    [quantity] => 50000000
+    [category_id] => 8
+    [shipping_address] => casa
+    [contact_number] => 03316109100
+)

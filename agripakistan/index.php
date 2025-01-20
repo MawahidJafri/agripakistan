@@ -9,7 +9,7 @@ $userRole = isset($_SESSION['role']) ? $_SESSION['role'] : '';
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>AgriPakistan</title>
+  <title>Agriculture</title>
   <meta name="description" content="">
   <meta name="keywords" content="">
 

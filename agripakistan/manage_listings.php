@@ -196,7 +196,7 @@ footer {
 </header>
 
 <main>
-    <h2>Manage Your Listings</h2>
+    <h2>Amina asif</h2>
 
     <!-- Display Success Messages -->
     <?php if (isset($_GET['message'])): ?>

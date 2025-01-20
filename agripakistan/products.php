@@ -307,7 +307,7 @@ footer .footer-top {
 </header>
 
     <main>
-        <h1>Mawahid Work</h1>
+        <h1>Available Products</h1>
         <div class="products-container">
         <?php while ($product = $result->fetch_assoc()): ?>
 <div class="product-card">

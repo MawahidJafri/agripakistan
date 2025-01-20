@@ -307,7 +307,7 @@ footer .footer-top {
 </header>
 
     <main>
-        <h1>Mawahid Work</h1>
+        <h1>Available Products</h1>
         <div class="products-container">
         <?php while ($product = $result->fetch_assoc()): ?>
 <div class="product-card">
@@ -363,8 +363,8 @@ footer .footer-top {
           <span class="sitename">AgriPakistan</span>
         </a>
         <div class="footer-contact pt-3">
-          <p>Shahab Pura Road</p>
-          <p>Sialkot, Pakistan</p>
+          <p>City Villas Sialkot</p>
+          <p>Lahore</p>
           <p class="mt-3"><strong>Phone:</strong> <span>+92 334 716 3786</span></p>
           <p><strong>Email:</strong> <span>info@example.com</span></p>
         </div>

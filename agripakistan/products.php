@@ -364,7 +364,7 @@ footer .footer-top {
         </a>
         <div class="footer-contact pt-3">
           <p>City Villas Sialkot</p>
-          <p>Sialkot, Pakistan</p>
+          <p>Lahore</p>
           <p class="mt-3"><strong>Phone:</strong> <span>+92 334 716 3786</span></p>
           <p><strong>Email:</strong> <span>info@example.com</span></p>
         </div>

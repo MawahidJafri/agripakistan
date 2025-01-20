@@ -473,7 +473,7 @@ $userRole = isset($_SESSION['role']) ? $_SESSION['role'] : '';
         <div class="row gy-4">
           <div class="col-lg-4 col-md-6 footer-about">
             <a href="index.html" class="logo d-flex align-items-center">
-              <span class="sitename">AgriPakistan</span>
+              <span class="sitename">AgriCulture</span>
             </a>
             <div class="footer-contact pt-3">
               <p>Shahab Pura Road</p>
